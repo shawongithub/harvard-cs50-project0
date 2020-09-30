@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  .header {
+
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 110px 120px;
+    grid-template-areas: ". . imagesearch advancedsearch";
+  }
+
+  .imagelink {
+    grid-area: imagesearch;
+    justify-self: center;
+    align-self: center;
+  }
+  .advancedlink {
+    grid-area: advancedsearch;
+    justify-self: center;
+    align-self: center;
+  }
+  a{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a:hover {
+    color: gray;
+    text-decoration: underline;
+  }
+
+.main {
+    display: grid;
+
+    padding: 5px;
+    grid-template-rows: 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". image ."
+  }
+  .image {
+    grid-area: image;
+    justify-self: center;
+    align-self: end;
+  }
+.input_div
+{
+    display: flex;
+    border: 1px solid #375aa0;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 481px;
+    margin-top: 20px;
+    border: 1px solid #dfe1e5;
+}
+
+
+.search-all {
+
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+}
+
+.txtbox{
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    height: 34px;
+    font-size: 16px;
+    width: 380px;
+    border: none;
+    margin-left: 8px;
+    padding:8px 20px;  
+    
+}
+
+.searchdiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 487px;
+}
+
+.custom{
+    cursor: pointer;
+    margin: 8px;
+}
+
+.fontsearch { 
+    position: relative; 
+} 
+
+.fontsearch i{ 
+    position: absolute; 
+    left:2px; 
+    top:30% ;
+    color: gray; 
+} 
+
+/* css for image search */
+
+.imgheader {
+
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-areas: ". . header";
+    }
+    
+.item-one {
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+    }
+
+  /* css for advancedsearch */
+  .advancedheader{
+      display: grid;
+      background-color:rgb(235, 230, 230);
+      grid-template-rows: 70px;
+      grid-template-columns: 200px 1fr 150px;
+      grid-template-areas: 
+      "logo . link"
+      ;
+  }
+  .logo{
+      grid-area: logo;
+      justify-self:center;
+      align-self: center;
+  }
+  .link{
+      grid-area: link;
+      justify-self: center;
+      align-self: center;
+  }
+  
